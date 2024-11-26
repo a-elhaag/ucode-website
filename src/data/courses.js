@@ -4,7 +4,7 @@ const courses = [
         name: "Python",
         description: "Learn Python programming from scratch and build your first Python application.",
         price: "EGP 700",
-        icon: "/assets/course_icons/python.png",
+        icon: "/assets/course_icons/Python.png",
         route: "/courses/python",
         enroll: "https://forms.office.com/your-python-form-url", // Microsoft Forms link for Python
     },
@@ -13,7 +13,7 @@ const courses = [
         name: "C++",
         description: "Start with our beginner-friendly course, where you’ll learn the basics of programming.",
         price: "EGP 700",
-        icon: "/assets/course_icons/cpp.png",
+        icon: "/assets/course_icons/CPP.png",
         route: "/courses/cpp",
         enroll: "https://forms.office.com/your-cpp-form-url", // Microsoft Forms link for C++
     },
@@ -22,7 +22,7 @@ const courses = [
         name: "Intro to Cybersecurity",
         description: "An introduction to network security, encryption, and threat detection.",
         price: "EGP 900",
-        icon: "/assets/course_icons/cybersecurity.png",
+        icon: "/assets/course_icons/Cybersecurity.png",
         route: "/courses/intro-to-cybersecurity",
         enroll: "https://forms.office.com/your-cybersecurity-form-url", // Microsoft Forms link for Cybersecurity
     },
