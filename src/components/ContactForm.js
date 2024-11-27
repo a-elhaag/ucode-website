@@ -11,7 +11,7 @@ export default function ContactForm() {
     if (state.succeeded) {
         return (
             <div className="text-center p-10 bg-[#F3F4F6] min-h-screen flex items-center justify-center">
-                <div className="bg-white p-8 rounded-lg shadow-md shadow-yellow-200 max-w-lg">
+                <div className="bg-white p-8 rounded-lg shadow-md shadow-orange-500 max-w-lg">
                     <h2 className="text-3xl font-bold text-blue-600">Thank You!</h2>
                     <p className="mt-4 text-lg text-gray-600">
                         We have received your message. We will get back to you shortly.
@@ -23,7 +23,7 @@ export default function ContactForm() {
 
     return (
         <div className="p-10 bg-[#F3F4F6] min-h-screen flex items-center justify-center">
-            <div className="bg-white p-8 rounded-lg shadow-md shadow-yellow-200 max-w-lg w-full">
+            <div className="bg-white p-8 rounded-lg shadow-md shadow-orange-500 max-w-lg w-full">
                 <h1 className="text-4xl font-bold text-blue-600 text-center mb-6">
                     Contact Us
                 </h1>
@@ -70,7 +70,7 @@ export default function ContactForm() {
                     {/* Submit Button */}
                     <Button
                         type="submit"
-                        variant="blue_yellow" // Updated variant
+                        variant="blue_orange" // Updated variant
                         size="lg"
                         disabled={state.submitting}
                         className="w-full"

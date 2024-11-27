@@ -11,7 +11,7 @@ const courses = [
     {
         id: "cpp",
         name: "C++",
-        description: "Start with our beginner-friendly course, where you’ll learn the basics of programming.",
+        description: "Start with our beginner-friendly course, where you\’ll learn the basics of programming.",
         price: "EGP 700",
         icon: "/assets/course_icons/CPP.png",
         route: "/courses/cpp",
@@ -35,6 +35,7 @@ const courses = [
         route: "/courses/web-development",
         enroll: "https://forms.office.com/your-web-development-form-url", // Microsoft Forms link for Web Development
     },
+    
 ];
 
 export default courses;

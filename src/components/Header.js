@@ -3,30 +3,29 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { UserButton, useAuth } from "@clerk/nextjs"; // Import useAuth
+import { UserButton, useAuth } from "@clerk/nextjs";
 import { Button } from "./ui/button";
-
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false); // Track dropdown visibility
     const { isSignedIn } = useAuth(); // Check user sign-in status
 
     return (
-        <header className="flex items-center justify-between p-1 bg-gray-100 shadow-md">
+        <header className="flex items-center justify-between py-4 px-6 bg-gray-100 shadow-md relative">
             {/* Logo */}
             <div className="flex items-center">
                 <Link href="/">
                     <Image
                         src="/Logo-Transparent.png"
                         alt="U-Code Logo"
-                        width={60}
+                        width={120}
                         height={80}
                         className="h-auto"
                     />
                 </Link>
             </div>
 
-            {/* Navigation Links (Desktop) */}
+            {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-10">
                 <Link
                     href="/"
@@ -68,9 +67,10 @@ const Header = () => {
                     <UserButton />
                 )}
             </div>
-            {/* Mobile Section: Login/UserButton + Hamburger Menu */}
+
+            {/* Mobile Section */}
             <div className="flex items-center space-x-4 md:hidden">
-                {/* Login Button or User Avatar */}
+                {/* Login or User Avatar */}
                 {!isSignedIn ? (
                     <button
                         onClick={() => {
@@ -84,48 +84,48 @@ const Header = () => {
                     <UserButton />
                 )}
 
-                {/* Hamburger Menu Button */}
+                {/* Hamburger Menu */}
                 <button
                     onClick={() => setMenuOpen(!menuOpen)}
                     className="p-2 text-blue-600 rounded-md focus:outline-none"
                 >
                     {menuOpen ? "✕" : "☰"}
                 </button>
-
-                {/* Mobile Menu */}
-                {menuOpen && (
-                    <div className="absolute right-0 top-12 bg-white rounded-lg shadow-lg w-48 z-50">
-                        <Link
-                            href="/"
-                            className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            href="/courses"
-                            className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            Courses
-                        </Link>
-                        <Link
-                            href="/contact"
-                            className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            Contact Us
-                        </Link>
-                        <Link
-                            href="/my-courses"
-                            className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            My Courses
-                        </Link>
-                    </div>
-                )}
             </div>
+
+            {/* Mobile Menu */}
+            {menuOpen && (
+                <div className="absolute right-0 top-16 bg-white rounded-lg shadow-lg w-48 z-50">
+                    <Link
+                        href="/"
+                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        Home
+                    </Link>
+                    <Link
+                        href="/courses"
+                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        Courses
+                    </Link>
+                    <Link
+                        href="/contact"
+                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        Contact Us
+                    </Link>
+                    <Link
+                        href="/my-courses"
+                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        My Courses
+                    </Link>
+                </div>
+            )}
         </header>
     );
 };

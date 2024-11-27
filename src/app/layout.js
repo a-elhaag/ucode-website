@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
             href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
             rel="stylesheet"
           />
-          <link rel="icon" href="/Favicon.svg" type="image/svg+xml" />
+          <link rel="icon" href="/Favicon.png" type="image/svg+xml" />
         </head>
         <body>
           <Header />
