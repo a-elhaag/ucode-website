@@ -9,7 +9,7 @@ const CourseCard = ({ id, name, description, price, icon, route, enroll }) => {
     return (
         <div
             onClick={() => router.push(route)} // Navigate to course page
-            className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600 hover:scale-105 hover:shadow-orange-500 hover:border-orange-500"
+            className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600 hover:bg-[#F3F4F6] hover:scale-105 hover:shadow-orange-500 hover:border-orange-500"
             style={{ borderRadius: "30px" }} // Custom border radius in pixels
         >
             <div className="w-20 h-20 mx-auto mb-3 overflow-hidden rounded-full border-2 border-blue-600">
