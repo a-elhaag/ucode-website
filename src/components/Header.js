@@ -34,6 +34,12 @@ const Header = () => {
                     Home
                 </Link>
                 <Link
+                    href="/about"
+                    className="text-blue-600 hover:text-orange-500 transition-colors"
+                >
+                    About Us
+                </Link>
+                <Link
                     href="/courses"
                     className="text-blue-600 hover:text-orange-500 transition-colors"
                 >
@@ -102,6 +108,13 @@ const Header = () => {
                         onClick={() => setMenuOpen(false)}
                     >
                         Home
+                    </Link>
+                    <Link
+                        href="/about"
+                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        About Us
                     </Link>
                     <Link
                         href="/courses"
