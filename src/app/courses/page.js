@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"; // Animations
 import CourseCard from "@/components/CourseCard";
 import courses from "@/data/courses";
-import LineDivider from "@/components/dividers/LineDivider"; // Custom Divider
+import LineDivider from "@/components/LineDivider"; // Custom Divider
 
 const CoursesPage = () => {
     return (

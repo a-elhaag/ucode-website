@@ -3,7 +3,7 @@
 import aboutUs from "@/data/aboutUs";
 import { motion } from "framer-motion"; // Import Framer Motion for animations
 import { Button } from "@/components/ui/button";
-import LineDivider from "@/components/dividers/LineDivider"; // Divider style as heading
+import LineDivider from "@/components/LineDivider"; // Divider style as heading
 
 const AboutUsPage = () => {
     return (

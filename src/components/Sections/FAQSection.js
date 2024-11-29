@@ -7,7 +7,7 @@ import {
     AccordionTrigger,
     AccordionContent,
 } from "@/components/ui/accordion";
-import LineDivider from "@/components/dividers/LineDivider";
+import LineDivider from "@/components/LineDivider";
 import faqData from "@/data/faq";
 
 const FAQSection = () => {

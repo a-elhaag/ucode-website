@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import LineDivider from "@/components/dividers/LineDivider";
+import LineDivider from "@/components/LineDivider";
 
 const ContactSection = () => {
     return (

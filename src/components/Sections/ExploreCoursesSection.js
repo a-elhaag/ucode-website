@@ -3,7 +3,7 @@
 import CourseCard from "@/components/CourseCard";
 import courses from "@/data/courses";
 import { Button } from "@/components/ui/button";
-import LineDivider from "@/components/dividers/LineDivider";
+import LineDivider from "@/components/LineDivider";
 
 const ExploreCoursesSection = () => {
     const featuredCourses = courses.slice(0, 3);

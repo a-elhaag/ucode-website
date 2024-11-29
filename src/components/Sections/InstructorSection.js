@@ -2,7 +2,7 @@
 
 import InstructorCard from "@/components/InstructorCard";
 import instructors from "@/data/instructors";
-import LineDivider from "@/components/dividers/LineDivider";
+import LineDivider from "@/components/LineDivider";
 
 const InstructorSection = () => {
     const topInstructor = instructors.find((instructor) => instructor.isTopMonthly);

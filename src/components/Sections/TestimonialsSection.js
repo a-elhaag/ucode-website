@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import testimonials from "@/data/testimonials";
-import LineDivider from "@/components/dividers/LineDivider";
+import LineDivider from "@/components/LineDivider";
 
 const TestimonialsSection = () => {
     const [isMobile, setIsMobile] = useState(false);
