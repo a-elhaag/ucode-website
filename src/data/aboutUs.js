@@ -1,5 +1,4 @@
 const aboutUs = {
-    title: "About U-Code Academy",
     description: [
         "At U-Code Academy, we are passionate about helping the next generation of innovators by offering high-quality courses in software engineering. We believe in empowering students with the skills needed to thrive in the digital world.",
         "Our mission is to equip students with the essential knowledge, practical skills, and hands-on experience they need to succeed in today’s fast-paced technology landscape. We aim to bridge the gap between theory and practice, ensuring our students are ready for real-world challenges.",
