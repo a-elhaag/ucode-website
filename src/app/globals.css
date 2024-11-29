@@ -6,6 +6,25 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+/* Add this to your global CSS file (e.g., globals.css) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Section Header Styling */
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  font-size: 1.875rem;
+  /* Adjust size for consistency */
+}
+
+.section-header .divider {
+  margin-top: 1rem;
+}
+
 @layer base {
   :root {
     --background: 243, 244, 246;
