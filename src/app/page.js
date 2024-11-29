@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Hero from "@/components/Sections/Home/Hero";
-import InstructorSection from "@/components/Sections/Home/InstructorSection";
-import ContactSection from "@/components/Sections/Home/ContactSection";
-import TestimonialsSection from "@/components/Sections/Home/TestimonialsSection";
-import ExploreCoursesSection from "@/components/Sections/Home/ExploreCoursesSection";
-import FAQSection from "@/components/Sections/Home/FAQSection";
+import Hero from "@/components/Sections/Hero";
+import InstructorSection from "@/components/Sections/InstructorSection";
+import ContactSection from "@/components/Sections/ContactSection";
+import TestimonialsSection from "@/components/Sections/TestimonialsSection";
+import ExploreCoursesSection from "@/components/Sections/ExploreCoursesSection";
+import FAQSection from "@/components/Sections/FAQSection";
 
 export default function Page() {
   return (
