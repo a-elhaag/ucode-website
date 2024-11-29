@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
                         ? testimonials.slice(0, 1).map(({ id, name, feedback, photo }) => (
                             <Card
                                 key={id}
-                                className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600 hover:bg-[#F3F4F6] hover:scale-105 hover:shadow-orange-500 hover:border-orange-500"
+                                className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600 hover:bg-[#F3F4F6] hover:scale-105 hover:shadow-yellow-400 hover:border-yellow-400"
                                 style={{ borderRadius: "30px" }}
                             >
                                 <div className="flex flex-col items-center text-center">
@@ -65,7 +65,7 @@ const TestimonialsSection = () => {
                         : testimonials.slice(0, 3).map(({ id, name, feedback, photo }) => (
                             <Card
                                 key={id}
-                                className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600 hover:bg-[#F3F4F6] hover:scale-105 hover:shadow-orange-500 hover:border-orange-500"
+                                className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600  hover:scale-105 hover:shadow-yellow-400 hover:border-yellow-400"
                                 style={{ borderRadius: "30px" }}
                             >
                                 <div className="flex flex-col items-center text-center">
@@ -116,7 +116,7 @@ const TestimonialsSection = () => {
                             {testimonials.map(({ id, name, feedback, photo }) => (
                                 <Card
                                     key={id}
-                                    className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600 hover:bg-[#F3F4F6] hover:scale-105 hover:shadow-orange-500 hover:border-orange-500"
+                                    className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600  hover:scale-105 hover:shadow-yellow-400 hover:border-yellow-400"
                                     style={{ borderRadius: "30px" }}
                                 >
                                     <div className="flex flex-col items-center text-center">
