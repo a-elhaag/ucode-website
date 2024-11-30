@@ -23,7 +23,7 @@ const CourseCard = ({ id, name, description, price, icon, route, enroll }) => {
             </div>
             <h2 className="text-lg font-bold text-center text-blue-600">{name}</h2>
             <p className="text-sm text-[#737373] mt-1 text-center">{description}</p>
-            <p className="text-base font-semibold text-center mt-2 text-orange-500">{price}</p>
+            <p className="text-base font-semibold text-center mt-2 text-orange-500">EGP {price}</p>
             <div className="text-center mt-4">
                 <Button
                     asChild
