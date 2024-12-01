@@ -3,7 +3,7 @@ const courses = [
         id: "python",
         name: "Python",
         description: "Learn Python programming from scratch and build your first Python application.",
-        price: 2100, // EGP
+        price: 700, // EGP
         duration: 3, // months
         icon: "/assets/course_icons/Python.png",
         route: "/courses/python",
@@ -13,7 +13,7 @@ const courses = [
         id: "cpp",
         name: "C++",
         description: "Start with our beginner-friendly course, where you\’ll learn the basics of programming.",
-        price: 2100,
+        price: 700,
         duration: 3, // months
         icon: "/assets/course_icons/CPP.png",
         route: "/courses/cpp",
@@ -23,7 +23,7 @@ const courses = [
         id: "intro-to-cybersecurity",
         name: "Intro to Cybersecurity",
         description: "An introduction to network security, encryption, and threat detection.",
-        price: 2700,
+        price: 900,
         duration: 3, // months
         icon: "/assets/course_icons/Cybersecurity.png",
         route: "/courses/intro-to-cybersecurity",
@@ -33,7 +33,7 @@ const courses = [
         id: "web-development",
         name: "Web Development",
         description: "Learn HTML, CSS, JavaScript, and responsive design with libraries like React.",
-        price: 2700,
+        price: 900,
         duration: 3, // months
         icon: "/assets/course_icons/Web Development.png",
         route: "/courses/web-development",

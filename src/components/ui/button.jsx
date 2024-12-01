@@ -11,9 +11,9 @@ const buttonVariants = cva(
       variant: {
         blue_orange: "bg-blue-600 text-white shadow-lg hover:bg-orange-500 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
         blue_yellow: "bg-blue-600 text-white shadow-lg hover:bg-yellow-400 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
-        orange_blue: "bg-orange-500 text-white shadow-lg hover:bg-blue-600 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
+        orange_blue: "bg-orange-500 text-white shadow-lg hover:bg-blue-600 hover:text-white hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
         orange_yellow: "bg-orange-500 text-white shadow-lg hover:bg-yellow-400 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
-        yellow_blue: "bg-yellow-400 text-black shadow-lg hover:bg-blue-600 hover:text-black hover:shadow-xl hover:-translate-y-1",
+        yellow_blue: "bg-yellow-400 text-black shadow-lg hover:bg-blue-600 hover:text-white hover:shadow-xl hover:-translate-y-1",
         yellow_orange: "bg-yellow-400 text-black shadow-lg hover:bg-orange-500 hover:text-black hover:shadow-xl hover:-translate-y-1",
         outline:
           "border border-gray-300 bg-white text-black shadow-sm hover:bg-gray-100 hover:text-gray-700",

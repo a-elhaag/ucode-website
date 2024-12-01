@@ -9,8 +9,8 @@ import socialMediaLinks from "@/data/socialMediaLinks";
 
 // Course-Specific Data
 const course = courses.find((c) => c.id === "python");
-const monthlyPrice = course.price / course.duration;
-const discountedPrice = course.price * 0.9;
+const monthlyPrice = course.price;
+const discountedPrice = course.price * course.duration * 0.9;
 
 const whyChooseUs = [
     {
@@ -136,14 +136,14 @@ const CoursePage = () => {
 
             {/* Curriculum Section */}
             <section className="container mx-auto px-4 py-16">
-                <h2 className="text-3xl font-bold text-center text-blue-600 mb-10">Curriculum</h2>
+                <h2 className="text-3xl font-bold text-center text-orange-500 mb-10">Educational program</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {curriculum.map((item, index) => (
                         <motion.div
                             key={index}
                             className={`p-4 bg-white border-2 rounded-[30px] shadow-md cursor-pointer transform transition group ${activeTopic === index
-                                    ? "border-orange-500 shadow-lg scale-105"
-                                    : "border-gray-300 hover:shadow-md hover:border-blue-500"
+                                ? "border-orange-500 shadow-lg scale-105"
+                                : "border-gray-300 hover:shadow-md hover:border-blue-500"
                                 }`}
                             onClick={() => toggleTopic(index)}
                             initial={{ opacity: 0, y: 20 }}
@@ -178,8 +178,8 @@ const CoursePage = () => {
                     ))}
                 </div>
                 <div className="text-center mt-8">
-                    <Button variant="orange_yellow" size="lg" asChild>
-                        <a href={course.enroll}>Enroll and Get Certified</a>
+                    <Button variant="orange_blue" size="lg" asChild>
+                        <a href={course.enroll}>Enroll Now</a>
                     </Button>
                 </div>
             </section>
@@ -189,14 +189,24 @@ const CoursePage = () => {
                 <h2 className="text-3xl font-bold text-blue-600 mb-6">Affordable Learning Options</h2>
                 <p className="text-lg mb-8">Flexible payment plans to suit your needs. Start your journey today!</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                    <div className="bg-white p-6 rounded-[30px] shadow-md">
-                        <h3 className="text-lg font-bold text-blue-600">Monthly Payment</h3>
-                        <p className="text-sm mt-2">EGP {monthlyPrice} per month</p>
-                    </div>
-                    <div className="bg-white p-6 rounded-[30px] shadow-md">
-                        <h3 className="text-lg font-bold text-orange-500">Full Payment</h3>
+                    <motion.div
+                        className="p-6 bg-blue-600 text-white rounded-[30px] shadow-md transform transition group hover:scale-105 hover:bg-blue-700"
+                        whileHover={{ scale: 1.05 }}
+                    >
+                        <h3 className="text-lg font-bold text-white group-hover:text-yellow-400 transition">
+                            Monthly Payment
+                        </h3>
+                        <p className="text-sm mt-2">EGP {monthlyPrice} per Level</p>
+                    </motion.div>
+                    <motion.div
+                        className="p-6 bg-orange-500 text-white rounded-[30px] shadow-md transform transition group hover:scale-105 hover:bg-orange-600"
+                        whileHover={{ scale: 1.05 }}
+                    >
+                        <h3 className="text-lg font-bold text-white group-hover:text-white transition">
+                            Full Payment
+                        </h3>
                         <p className="text-sm mt-2">EGP {discountedPrice} (10% Off)</p>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
