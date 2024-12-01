@@ -51,16 +51,16 @@ const Header = () => {
                 >
                     Contact Us
                 </Link>
-                <Link
+                {/* <Link
                     href="/my-courses"
                     className="text-blue-600 hover:text-orange-500 transition-colors"
                 >
                     My Courses
-                </Link>
+                </Link> */}
             </nav>
 
             {/* Login / User Button */}
-            <div className="hidden md:flex items-center">
+            {/* <div className="hidden md:flex items-center">
                 {!isSignedIn ? (
                     <Button
                         variant="blue_orange"
@@ -72,12 +72,12 @@ const Header = () => {
                 ) : (
                     <UserButton />
                 )}
-            </div>
+            </div> */}
 
             {/* Mobile Section */}
             <div className="flex items-center space-x-4 md:hidden">
                 {/* Login or User Avatar */}
-                {!isSignedIn ? (
+                {/* {!isSignedIn ? (
                     <button
                         onClick={() => {
                             window.location.href = "/sign-in";
@@ -88,7 +88,7 @@ const Header = () => {
                     </button>
                 ) : (
                     <UserButton />
-                )}
+                )} */}
 
                 {/* Hamburger Menu */}
                 <button
@@ -130,13 +130,13 @@ const Header = () => {
                     >
                         Contact Us
                     </Link>
-                    <Link
+                    {/* <Link
                         href="/my-courses"
                         className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
                         onClick={() => setMenuOpen(false)}
                     >
                         My Courses
-                    </Link>
+                    </Link> */}
                 </div>
             )}
         </header>

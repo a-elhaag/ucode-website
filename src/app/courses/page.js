@@ -52,20 +52,6 @@ const CoursesPage = () => {
                     ))}
                 </motion.div>
 
-                {/* Call to Action for More Courses */}
-                <motion.div
-                    className="text-center mt-12"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.6 }}
-                >
-                    <button
-                        className="px-6 py-3 bg-orange-500 text-white rounded-full shadow-lg hover:bg-orange-600 transition-all text-lg"
-                        onClick={() => window.location.href = "/courses"}
-                    >
-                        Explore All Courses
-                    </button>
-                </motion.div>
             </div>
         </div>
     );

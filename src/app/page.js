@@ -20,15 +20,6 @@ export default function Page() {
         <Hero />
       </motion.div>
 
-      {/* Testimonials Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-      >
-        <TestimonialsSection />
-      </motion.div>
 
       {/* Explore Courses Section */}
       <motion.div
@@ -40,8 +31,17 @@ export default function Page() {
         <ExploreCoursesSection />
       </motion.div>
 
-      {/* Instructor Section */}
+      {/* Testimonials Section */}
       <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        <TestimonialsSection />
+      </motion.div>
+      {/* Instructor Section */}
+      {/* <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -49,7 +49,7 @@ export default function Page() {
       >
         <InstructorSection />
       </motion.div>
-
+ */}
       {/* FAQ Section */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}

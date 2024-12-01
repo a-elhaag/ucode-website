@@ -104,10 +104,29 @@ const curriculum = [
 
 
 const testimonials = [
-    { id: 1, name: "John Doe", feedback: "This course was a game-changer for my career!", photo: "/assets/testimonialsPhotos/john.jpg" },
-    { id: 2, name: "Jane Smith", feedback: "The instructors were amazing and very supportive.", photo: "/assets/testimonialsPhotos/jane.jpg" },
-    { id: 3, name: "Ali Khan", feedback: "I loved the projects; they helped me apply my knowledge.", photo: "/assets/testimonialsPhotos/ali.jpg" },
+    {
+        id: 1,
+        name: "Ammar ElKholy",
+        feedback: "Course combines theory with practice. Lectures are explained simply. The schedule complements college studies, enhancing understanding.",
+        photo: "/assets/testimonialsPhotos/ammarElkholy.jpg",
+    },
+
+    {
+        id: 2,
+        name: "Omar",
+        feedback: "The course was incredibly helpful, especially the introduction, which gave a clear and structured understanding of the concepts.",
+        photo: "/assets/testimonialsPhotos/omar.jpg", // Example path to photo
+    },
+    {
+        id: 3,
+        name: "Mark",
+        feedback: "I would like to thanks U-Code for guiding us and teaching us through the course of the introduction of cyber-security and being patient with us.",
+        photo: "/assets/testimonialsPhotos/mark.jpg", // Example path to photo
+    },
+
+
 ];
+
 
 
 

@@ -302,7 +302,7 @@ const CoursePage = () => {
             </section>
 
             {/* Testimonials Section */}
-            <section className="container mx-auto px-4 py-16">
+            {/* <section className="container mx-auto px-4 py-16">
                 <h2 className="text-3xl font-bold text-center text-blue-600 mb-10">What Our Students Say</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {testimonials.map(({ id, name, feedback, photo }) => (
@@ -326,7 +326,7 @@ const CoursePage = () => {
                         </motion.div>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
         </div>
     );
