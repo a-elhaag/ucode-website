@@ -218,7 +218,7 @@ const CoursePage = () => {
             <section className="py-16 bg-blue-600 text-white text-center">
                 <LineDivider text="Earn a Certificate" highlightedText="#" />
                 <p className="text-lg mb-8">
-                    Receive a <span className="text-orange-500 font-bold">certificate</span> upon completing the full course.
+                    Receive a <span className="font-bold">certificate</span> upon completing the full course.
                 </p>
                 <Button variant="orange_yellow" size="lg" asChild>
                     <a href={course.enroll}>Enroll and Get Certified</a>
