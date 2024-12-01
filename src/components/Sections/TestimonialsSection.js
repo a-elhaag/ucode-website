@@ -29,7 +29,7 @@ const TestimonialsSection = () => {
                     transition={{ duration: 0.5, delay: id * 0.1 }}
                 >
                     <Card
-                        className="p-12 m-4 border-2 shadow-md cursor-pointer transform border-blue-600 hover:scale-105 hover:shadow-yellow-400 hover:border-yellow-400"
+                        className="p-12 m-4 border-2 shadow-md cursor-pointer transform border-blue-600 hover:scale-105 hover:shadow-orange-500 hover:border-orange-500"
                         style={{ borderRadius: "30px" }}
                     >
                         <div className="flex flex-col items-center text-center">
