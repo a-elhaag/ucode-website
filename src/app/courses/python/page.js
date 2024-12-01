@@ -12,6 +12,37 @@ const course = courses.find((c) => c.id === "python");
 const monthlyPrice = course.price / course.duration;
 const discountedPrice = course.price * 0.9;
 
+const whyChooseUs = [
+    {
+        title: "Live Online Sessions",
+        description: "All sessions are conducted live online, offering real-time interaction with instructors.",
+        icon: "🎥",
+    },
+    {
+        title: "Recorded Sessions Available",
+        description: "Never miss a session! All live classes are recorded and accessible anytime.",
+        icon: "🎞️",
+    },
+    {
+        title: "Expert Instructors",
+        description: "Learn from industry experts with hands-on experience in coding.",
+        icon: "🏆",
+    },
+];
+
+const quickFacts = [
+    {
+        icon: "⏳", // Example icon, replace with a proper React icon
+        title: "Duration",
+        description: "4 months (16 weeks) with flexible scheduling options.",
+    },
+    {
+        icon: "📋", // Example icon, replace with a proper React icon
+        title: "Prerequisites",
+        description: "No prior coding experience is required to get started.",
+    },
+];
+
 const curriculum = [
     { topic: "Introduction to Programming", description: "Understand the basics of programming and why Python is powerful." },
     { topic: "Basic Syntax and Structure", description: "Learn how to write and organize Python code effectively." },
@@ -31,38 +62,7 @@ const testimonials = [
     { id: 3, name: "Ali Khan", feedback: "I loved the projects; they helped me apply my knowledge.", photo: "/assets/testimonialsPhotos/ali.jpg" },
 ];
 
-const preRequirements = [
-    {
-        title: "Basic Computer Knowledge",
-        description: "Familiarity with operating systems, file management, and basic tasks.",
-    },
-    {
-        title: "Logical Thinking",
-        description: "Ability to solve problems using logical reasoning and patterns.",
-    },
-    {
-        title: "Eagerness to Learn",
-        description: "A passion for learning new skills and embracing challenges.",
-    },
-];
 
-const whyChooseUs = [
-    {
-        title: "Live Online Sessions",
-        description: "All sessions are conducted live online, offering real-time interaction with instructors.",
-        icon: "🎥",
-    },
-    {
-        title: "Recorded Sessions Available",
-        description: "Never miss a session! All live classes are recorded and accessible anytime.",
-        icon: "🎞️",
-    },
-    {
-        title: "Expert Instructors",
-        description: "Learn from industry experts with hands-on experience in coding.",
-        icon: "🏆",
-    },
-];
 
 const CoursePage = () => {
     const whatsappLink = socialMediaLinks.whatsapp;
@@ -111,6 +111,28 @@ const CoursePage = () => {
                     </div>
                 </div>
             </section>
+            {/* Course Overview */}
+            <section className="py-16 bg-gray-100">
+                <div className="container mx-auto px-4">
+                    <LineDivider text="Quick Facts" highlightedText="::" />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+                        {quickFacts.map((item, index) => (
+                            <motion.div
+                                key={index}
+                                className="p-6 bg-orange-500 text-white rounded-[30px] shadow-md transition-transform transform hover:scale-105 hover:bg-orange-600"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <div className="text-4xl mb-4 text-center">{item.icon}</div>
+                                <h3 className="text-lg font-bold text-center">{item.title}</h3>
+                                <p className="text-sm mt-2 text-center whitespace-pre-line">{item.description}</p>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
 
             {/* Curriculum Section */}
             <section className="container mx-auto px-4 py-16">
@@ -120,8 +142,8 @@ const CoursePage = () => {
                         <motion.div
                             key={index}
                             className={`p-4 bg-white border-2 rounded-[30px] shadow-md cursor-pointer transform transition group ${activeTopic === index
-                                ? "border-orange-500 shadow-lg scale-105"
-                                : "border-gray-300 hover:shadow-md hover:border-blue-500"
+                                    ? "border-orange-500 shadow-lg scale-105"
+                                    : "border-gray-300 hover:shadow-md hover:border-blue-500"
                                 }`}
                             onClick={() => toggleTopic(index)}
                             initial={{ opacity: 0, y: 20 }}
@@ -139,19 +161,26 @@ const CoursePage = () => {
                                     ▶
                                 </motion.span>
                             </div>
-                            {activeTopic === index && (
-                                <motion.p
-                                    className="mt-4 text-gray-600"
-                                    initial={{ opacity: 0, height: 0 }}
-                                    animate={{ opacity: 1, height: "auto" }}
-                                    exit={{ opacity: 0, height: 0 }}
-                                    transition={{ duration: 0.4 }}
-                                >
-                                    {item.description}
-                                </motion.p>
-                            )}
+                            <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={
+                                    activeTopic === index
+                                        ? { opacity: 1, height: "auto" }
+                                        : { opacity: 0, height: 0 }
+                                }
+                                exit={{ opacity: 0, height: 0 }}
+                                transition={{ duration: 0.4, ease: "easeInOut" }} // Smooth transition
+                                className="overflow-hidden mt-4"
+                            >
+                                <p className="text-gray-600">{item.description}</p>
+                            </motion.div>
                         </motion.div>
                     ))}
+                </div>
+                <div className="text-center mt-8">
+                    <Button variant="orange_yellow" size="lg" asChild>
+                        <a href={course.enroll}>Enroll and Get Certified</a>
+                    </Button>
                 </div>
             </section>
 
@@ -173,8 +202,10 @@ const CoursePage = () => {
 
             {/* Certificate Section */}
             <section className="py-16 bg-blue-600 text-white text-center">
-                <h2 className="text-3xl font-bold mb-6">Earn a Certificate</h2>
-                <p className="text-lg mb-8">Receive a recognized certificate upon completing the full course.</p>
+                <LineDivider text="Earn a Certificate" highlightedText="#" />
+                <p className="text-lg mb-8">
+                    Receive a <span className="text-orange-500 font-bold">certificate</span> upon completing the full course.
+                </p>
                 <Button variant="orange_yellow" size="lg" asChild>
                     <a href={course.enroll}>Enroll and Get Certified</a>
                 </Button>
@@ -187,7 +218,8 @@ const CoursePage = () => {
                     {testimonials.map(({ id, name, feedback, photo }) => (
                         <motion.div
                             key={id}
-                            className="p-6 bg-white border-2 rounded-[30px] shadow-md transform hover:scale-105"
+                            className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600 hover:bg-[#F3F4F6] hover:scale-105 hover:shadow-orange-500 hover:border-orange-500"
+                            style={{ borderRadius: "30px" }}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.3 }}
