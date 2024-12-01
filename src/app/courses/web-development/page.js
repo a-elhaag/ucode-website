@@ -8,7 +8,7 @@ import courses from "@/data/courses";
 import socialMediaLinks from "@/data/socialMediaLinks";
 
 // Course-Specific Data
-const course = courses.find((c) => c.id === "python");
+const course = courses.find((c) => c.id === "web-development");
 const monthlyPrice = course.price;
 const discountedPrice = course.price * course.duration * 0.9;
 
@@ -44,21 +44,96 @@ const quickFacts = [
 ];
 
 const curriculum = [
-    { topic: "Introduction to Programming", description: "Understand the basics of programming and the power of Python." },
-    { topic: "Basic Syntax and Structure", description: "Learn how to write and organize Python code effectively." },
-    { topic: "Variables and Data Types", description: "Explore Python's data types and learn how to store and manipulate data." },
-    { topic: "Input and Output Functions", description: "Understand how to interact with users through input and output functions." },
-    { topic: "Operators and Expressions", description: "Learn to perform calculations and logical operations using Python operators." },
-    { topic: "Control Flow", description: "Master decision-making with if-else statements and implement loops for iteration." },
-    { topic: "Functions and Recursion", description: "Write reusable code blocks and solve problems using recursive techniques." },
-    { topic: "Strings and Data Collections", description: "Manipulate and process text effectively using Python's string operations." },
-    { topic: "Lists", description: "Learn how to organize and manipulate data using Python lists." },
-    { topic: "Dictionaries", description: "Use key-value pairs to store and access data efficiently with dictionaries." },
-    { topic: "Object-Oriented Programming (OOP)", description: "Design and build programs using classes, objects, and OOP principles." },
-    { topic: "Problem-Solving Skills", description: "Apply Python to solve real-world challenges through structured problem-solving." },
-    { topic: "Mini Projects", description: "Practice and solidify your skills by working on small, practical projects." },
-    { topic: "Final Project", description: "Combine all your learning to create a comprehensive capstone project." },
+    {
+        topic: "HTML & CSS Fundamentals",
+        description: "Learn the building blocks of web development with HTML and CSS. Create structured and visually appealing web pages."
+    },
+    {
+        topic: "Introduction to HTML",
+        description: "Tags, elements, and attributes."
+    },
+    {
+        topic: "Building Web Structures",
+        description: "Headings, paragraphs, lists, and more."
+    },
+    {
+        topic: "Styling with CSS",
+        description: "Selectors, properties, and values."
+    },
+    {
+        topic: "Responsive Design",
+        description: "Media queries and flexbox."
+    },
+    {
+        topic: "CSS Grid",
+        description: "Master advanced layouts for modern web designs."
+    },
+    {
+        topic: "Mini Project: Personal Portfolio",
+        description: "Apply your HTML and CSS knowledge to create a portfolio page."
+    },
+    {
+        topic: "JavaScript Basics",
+        description: "Dive into JavaScript, the programming language of the web. Add interactivity and functionality to your web pages."
+    },
+    {
+        topic: "Introduction to JavaScript",
+        description: "Variables, data types, and operators."
+    },
+    {
+        topic: "Control Flow",
+        description: "Conditional statements and loops."
+    },
+    {
+        topic: "DOM Manipulation",
+        description: "Selecting and modifying HTML elements."
+    },
+    {
+        topic: "Event Handling",
+        description: "Respond to user actions like clicks and keypresses."
+    },
+    {
+        topic: "Basic Animations",
+        description: "Creating dynamic effects using JavaScript."
+    },
+    {
+        topic: "Mini Project: To-Do List App",
+        description: "Develop an interactive to-do list app using JavaScript."
+    },
+    {
+        topic: "Advanced JavaScript & React",
+        description: "Master advanced JavaScript concepts and build modern web applications with React."
+    },
+    {
+        topic: "Advanced JavaScript Features",
+        description: "ES6+ features like arrow functions, destructuring, and modules."
+    },
+    {
+        topic: "APIs and Fetch",
+        description: "Connect your app to external data sources."
+    },
+    {
+        topic: "Introduction to React",
+        description: "Learn components, JSX, and props."
+    },
+    {
+        topic: "State Management",
+        description: "Manage application data with useState and useEffect."
+    },
+    {
+        topic: "Styling in React",
+        description: "CSS Modules and styled-components."
+    },
+    {
+        topic: "React Router",
+        description: "Build multi-page applications."
+    },
+    {
+        topic: "Final Project: Web App",
+        description: "Build a fully functional, responsive web app."
+    }
 ];
+
 
 const testimonials = [
     { id: 1, name: "John Doe", feedback: "This course was a game-changer for my career!", photo: "/assets/testimonialsPhotos/john.jpg" },
@@ -227,7 +302,7 @@ const CoursePage = () => {
             </section>
 
             {/* Testimonials Section */}
-            {/* <section className="container mx-auto px-4 py-16">
+            <section className="container mx-auto px-4 py-16">
                 <h2 className="text-3xl font-bold text-center text-blue-600 mb-10">What Our Students Say</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {testimonials.map(({ id, name, feedback, photo }) => (
@@ -251,7 +326,7 @@ const CoursePage = () => {
                         </motion.div>
                     ))}
                 </div>
-            </section> */}
+            </section>
 
         </div>
     );

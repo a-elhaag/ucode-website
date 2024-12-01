@@ -8,7 +8,7 @@ import courses from "@/data/courses";
 import socialMediaLinks from "@/data/socialMediaLinks";
 
 // Course-Specific Data
-const course = courses.find((c) => c.id === "python");
+const course = courses.find((c) => c.id === "cpp");
 const monthlyPrice = course.price;
 const discountedPrice = course.price * course.duration * 0.9;
 
@@ -44,21 +44,20 @@ const quickFacts = [
 ];
 
 const curriculum = [
-    { topic: "Introduction to Programming", description: "Understand the basics of programming and the power of Python." },
-    { topic: "Basic Syntax and Structure", description: "Learn how to write and organize Python code effectively." },
-    { topic: "Variables and Data Types", description: "Explore Python's data types and learn how to store and manipulate data." },
-    { topic: "Input and Output Functions", description: "Understand how to interact with users through input and output functions." },
-    { topic: "Operators and Expressions", description: "Learn to perform calculations and logical operations using Python operators." },
-    { topic: "Control Flow", description: "Master decision-making with if-else statements and implement loops for iteration." },
+    { topic: "Introduction to Programming", description: "Understand the basics of programming and the fundamentals of C++." },
+    { topic: "Basic Syntax and Structure", description: "Learn how to write and organize C++ code effectively." },
+    { topic: "Variables and Data Types", description: "Explore C++'s data types and learn how to store and manipulate data." },
+    { topic: "Input and Output", description: "Master handling user input and displaying output using C++'s I/O streams." },
+    { topic: "Operators and Expressions", description: "Learn to perform calculations and logical operations using C++ operators." },
+    { topic: "Control Flow", description: "Implement decision-making with if-else statements and loops for iterative processes." },
     { topic: "Functions and Recursion", description: "Write reusable code blocks and solve problems using recursive techniques." },
-    { topic: "Strings and Data Collections", description: "Manipulate and process text effectively using Python's string operations." },
-    { topic: "Lists", description: "Learn how to organize and manipulate data using Python lists." },
-    { topic: "Dictionaries", description: "Use key-value pairs to store and access data efficiently with dictionaries." },
+    { topic: "Arrays and Pointers", description: "Understand and manipulate data efficiently using arrays and pointers in C++." },
     { topic: "Object-Oriented Programming (OOP)", description: "Design and build programs using classes, objects, and OOP principles." },
-    { topic: "Problem-Solving Skills", description: "Apply Python to solve real-world challenges through structured problem-solving." },
-    { topic: "Mini Projects", description: "Practice and solidify your skills by working on small, practical projects." },
-    { topic: "Final Project", description: "Combine all your learning to create a comprehensive capstone project." },
+    { topic: "Problem-Solving Skills", description: "Apply C++ to solve real-world challenges and develop structured solutions." },
+    { topic: "Mini Projects", description: "Consolidate your skills through practical, hands-on projects." },
+    { topic: "Final Project", description: "Showcase your knowledge by building a comprehensive capstone project." },
 ];
+
 
 const testimonials = [
     { id: 1, name: "John Doe", feedback: "This course was a game-changer for my career!", photo: "/assets/testimonialsPhotos/john.jpg" },

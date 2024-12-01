@@ -20,13 +20,13 @@ const courses = [
         enroll: "https://forms.office.com/your-cpp-form-url", // Microsoft Forms link for C++
     },
     {
-        id: "intro-to-cybersecurity",
-        name: "Intro to Cybersecurity",
+        id: "cybersecurity",
+        name: "Cybersecurity",
         description: "An introduction to network security, encryption, and threat detection.",
         price: 900,
         duration: 3, // months
         icon: "/assets/course_icons/Cybersecurity.png",
-        route: "/courses/intro-to-cybersecurity",
+        route: "/courses/cybersecurity",
         enroll: "https://forms.office.com/your-cybersecurity-form-url", // Microsoft Forms link for Cybersecurity
     },
     {

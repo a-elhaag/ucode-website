@@ -8,7 +8,7 @@ import courses from "@/data/courses";
 import socialMediaLinks from "@/data/socialMediaLinks";
 
 // Course-Specific Data
-const course = courses.find((c) => c.id === "python");
+const course = courses.find((c) => c.id === "cybersecurity");
 const monthlyPrice = course.price;
 const discountedPrice = course.price * course.duration * 0.9;
 
@@ -44,21 +44,64 @@ const quickFacts = [
 ];
 
 const curriculum = [
-    { topic: "Introduction to Programming", description: "Understand the basics of programming and the power of Python." },
-    { topic: "Basic Syntax and Structure", description: "Learn how to write and organize Python code effectively." },
-    { topic: "Variables and Data Types", description: "Explore Python's data types and learn how to store and manipulate data." },
-    { topic: "Input and Output Functions", description: "Understand how to interact with users through input and output functions." },
-    { topic: "Operators and Expressions", description: "Learn to perform calculations and logical operations using Python operators." },
-    { topic: "Control Flow", description: "Master decision-making with if-else statements and implement loops for iteration." },
-    { topic: "Functions and Recursion", description: "Write reusable code blocks and solve problems using recursive techniques." },
-    { topic: "Strings and Data Collections", description: "Manipulate and process text effectively using Python's string operations." },
-    { topic: "Lists", description: "Learn how to organize and manipulate data using Python lists." },
-    { topic: "Dictionaries", description: "Use key-value pairs to store and access data efficiently with dictionaries." },
-    { topic: "Object-Oriented Programming (OOP)", description: "Design and build programs using classes, objects, and OOP principles." },
-    { topic: "Problem-Solving Skills", description: "Apply Python to solve real-world challenges through structured problem-solving." },
-    { topic: "Mini Projects", description: "Practice and solidify your skills by working on small, practical projects." },
-    { topic: "Final Project", description: "Combine all your learning to create a comprehensive capstone project." },
+    {
+        topic: "Cybersecurity Essential Terminologies",
+        description: "Learn the key terms and concepts that form the foundation of cybersecurity."
+    },
+    {
+        topic: "Introduction to Cryptography",
+        description: "Understand encryption, decryption, and how cryptographic methods protect data."
+    },
+    {
+        topic: "Kali Linux File System",
+        description: "Explore the structure of Kali Linux and learn how to navigate its file system."
+    },
+    {
+        topic: "Kali Linux Basic Commands",
+        description: "Master essential Linux commands for file management, navigation, and system operations."
+    },
+    {
+        topic: "Introduction to Networking",
+        description: "Learn the basics of computer networks, including protocols, IP addresses, and ports."
+    },
+    {
+        topic: "Wireshark Basics",
+        description: "Use Wireshark to capture and analyze network traffic for security insights."
+    },
+    {
+        topic: "Walking Through Machines with HackTheBox",
+        description: "Gain hands-on experience by solving challenges on HackTheBox."
+    },
+    {
+        topic: "Information Gathering",
+        description: "Learn techniques to collect data about targets for ethical hacking."
+    },
+    {
+        topic: "Footprinting and Scanning",
+        description: "Understand how to map networks and identify open ports and services."
+    },
+    {
+        topic: "Vulnerability Assessment",
+        description: "Identify potential security vulnerabilities in systems and networks."
+    },
+    {
+        topic: "Web Application Attacks",
+        description: "Learn about common web application vulnerabilities, such as SQL injection and XSS."
+    },
+    {
+        topic: "System Attacks",
+        description: "Explore methods of attacking and securing operating systems."
+    },
+    {
+        topic: "Network Attacks",
+        description: "Understand network-based attacks, including man-in-the-middle and denial-of-service."
+    },
+    {
+        topic: "Password Cracking",
+        description: "Learn techniques to test password security using tools like John the Ripper and Hydra."
+    },
 ];
+
 
 const testimonials = [
     { id: 1, name: "John Doe", feedback: "This course was a game-changer for my career!", photo: "/assets/testimonialsPhotos/john.jpg" },
@@ -227,7 +270,7 @@ const CoursePage = () => {
             </section>
 
             {/* Testimonials Section */}
-            {/* <section className="container mx-auto px-4 py-16">
+            <section className="container mx-auto px-4 py-16">
                 <h2 className="text-3xl font-bold text-center text-blue-600 mb-10">What Our Students Say</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {testimonials.map(({ id, name, feedback, photo }) => (
@@ -251,7 +294,7 @@ const CoursePage = () => {
                         </motion.div>
                     ))}
                 </div>
-            </section> */}
+            </section>
 
         </div>
     );
