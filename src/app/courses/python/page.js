@@ -84,7 +84,7 @@ const CoursePage = () => {
                     {course.name}
                 </h1>
                 <p className="text-lg mb-8">{course.description}</p>
-                <div className="space-x-4">
+                <div className="space-y-4 md:space-x-4 md:space-y-0 flex flex-col md:flex-row items-center justify-center">
                     <Button variant="orange_yellow" size="lg" asChild>
                         <a href={course.enroll}>Enroll</a>
                     </Button>
@@ -93,7 +93,6 @@ const CoursePage = () => {
                     </Button>
                 </div>
             </section>
-
             {/* Pricing Section */}
             <section className="py-16 bg-gray-100 text-center">
                 <LineDivider text="Affordable Learning Options" highlightedText="//" />

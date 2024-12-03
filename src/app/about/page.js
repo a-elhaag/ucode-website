@@ -44,15 +44,10 @@ const AboutUsPage = () => {
                     transition={{ duration: 0.8, delay: 0.6 }}
                 >
                     <p className="text-sm text-gray-600 mb-4">{aboutUs.contactCTA}</p>
-                    <Button
-                        as="a"
-                        href="/contact"
-                        variant="blue_orange"
-                        size="lg"
-                        className="shadow-lg hover:shadow-xl"
-                    >
-                        Contact Us
+                    <Button variant="blue_yellow" size="lg" asChild>
+                        <a href="/contact">Get in Touch</a>
                     </Button>
+
                 </motion.div>
             </div>
         </section>
