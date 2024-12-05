@@ -8,7 +8,7 @@ import courses from "@/data/courses";
 import socialMediaLinks from "@/data/socialMediaLinks";
 
 // Course-Specific Data
-const course = courses.find((c) => c.id === "ai");
+const course = courses.find((c) => c.id === "scratch");
 const monthlyPrice = course.price;
 const discountedPrice = course.price * course.duration * 0.9;
 
@@ -34,30 +34,24 @@ const quickFacts = [
     {
         icon: "⏳", // Example icon, replace with a proper React icon
         title: "Duration",
-        description: "16 hours per level, totaling 48 hours across all levels.",
+        description: "8 hours per level, totaling 24 hours across all levels.",
     },
     {
         icon: "📋", // Example icon, replace with a proper React icon
         title: "Prerequisites",
-        description: "Having prior coding experience is not required to get started, but familiarity with Python can be beneficial for a smoother learning experience.",
+        description: "Having prior coding experience is not required to get started.",
     },
 ];
 
 const curriculum = [
-    { topic: "Foundations of Artificial Intelligence", description: "Deep dive into the history, goals, and foundational theories of AI, including symbolic and connectionist approaches." },
-    { topic: "AI Tools and Frameworks", description: "Explore advanced AI tools like TensorFlow, PyTorch, and OpenAI APIs for building and deploying AI systems." },
-    { topic: "Prompt Engineering and Fine-Tuning Models", description: "Learn advanced techniques for designing prompts and fine-tuning AI models for specific tasks." },
-    { topic: "Data Engineering for AI", description: "Understand data preprocessing, feature engineering, and building high-quality datasets for AI applications." },
-    { topic: "Search and Optimization Techniques", description: "Explore algorithms like A*, genetic algorithms, and optimization techniques used in AI." },
-    { topic: "Agents and Multi-Agent Systems", description: "Design and analyze intelligent agents and multi-agent systems for complex decision-making tasks." },
-    { topic: "Introduction to Reinforcement Learning", description: "Understand the basics of reinforcement learning, including Markov Decision Processes (MDPs) and Q-Learning." },
-    { topic: "Neural Networks and Deep Learning", description: "Learn the architecture of deep neural networks, backpropagation, and training strategies for various use cases." },
-    { topic: "Natural Language Processing (NLP)", description: "Understand the basics of NLP and implement tasks like text classification and summarization using pre-trained models." },
-    { topic: "Computer Vision Basics", description: "Explore techniques for image recognition and processing using convolutional neural networks (CNNs)." },
-    { topic: "Ethics, Fairness, and Transparency in AI", description: "Discuss advanced topics in AI ethics, ensuring fairness, and building interpretable models." },
-    { topic: "Applications of AI Across Domains", description: "Analyze advanced use cases of AI in fields like healthcare, finance, robotics, and autonomous systems." },
-    { topic: "Advanced Mini Projects", description: "Apply concepts learned in class to build robust AI-powered applications, focusing on scalability and efficiency." },
-    { topic: "Capstone Project", description: "Develop and present a sophisticated AI solution, integrating multiple concepts covered in the course." },
+    { topic: "Foundations of Visual Programming", description: "Introduction to visual programming concepts using Scratch, focusing on basic building blocks and logic." },
+    { topic: "Storytelling and Animation", description: "Learn to create engaging animations and interactive stories with Scratch's intuitive tools." },
+    { topic: "Interactive Game Design", description: "Dive into game mechanics and build simple games using events, loops, and conditional statements." },
+    { topic: "Foundations of App Development", description: "Introduction to mobile app development concepts using MIT App Inventor." },
+    { topic: "Designing Functional Apps", description: "Learn to design and implement mobile apps with user-friendly interfaces and basic functionality." },
+    { topic: "Advanced App Features", description: "Explore advanced features in MIT App Inventor, such as using sensors, data storage, and APIs." },
+    { topic: "Integration of Scratch and App Inventor", description: "Combine Scratch projects with App Inventor concepts to create cross-platform interactive solutions." },
+    { topic: "Capstone Project", description: "Develop and present a comprehensive project that combines skills learned in Scratch and MIT App Inventor." }
 ];
 
 
