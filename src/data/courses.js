@@ -39,6 +39,27 @@ const courses = [
         route: "/courses/web-development",
         enroll: "https://forms.office.com/e/F4yR2SmNYC", // Microsoft Forms link for Web Development
     },
+    {
+        id: "ai",
+        name: "Artificial Intelligence",
+        description: "Learn foundational concepts in Artificial Intelligence.",
+        price: 900, // Add currency formatting in UI
+        duration: 3, // levels
+        icon: "/assets/course_icons/AI.png", // Update with relevant AI icon
+        route: "/courses/ai",
+        enroll: "https://forms.office.com/e/F4", // Update with AI-specific form link
+    },
+    {
+        id: "scratch",
+        name: "Scratch Programming",
+        description: "Fundamentals of programming through an interactive platform.",
+        price: 650, // per level, dynamically calculate for total levels in UI
+        duration: 3, // levels
+        icon: "/assets/course_icons/Scratch.png", // Use relevant Scratch course icon
+        route: "/courses/scratch",
+        enroll: "https://forms.office.com/e/F4mNYC", // Update with Scratch-specific form link
+    }
+
 
 ];
 
