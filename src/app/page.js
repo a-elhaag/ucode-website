@@ -9,10 +9,12 @@ import ExploreCoursesSection from "@/components/Sections/ExploreCoursesSection";
 import FAQSection from "@/components/Sections/FAQSection";
 import EnrollSection from "@/components/Sections/EnrollSection"
 import ReferralSection from "@/components/Sections/ReferralSection"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Page() {
   return (
     <>
+      <Analytics />
       {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0 }}
