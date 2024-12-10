@@ -1,21 +1,66 @@
 "use client";
 
-import { motion } from "framer-motion"; // Animations
+import { motion } from "framer-motion";
+import { useState } from "react";
 import CourseCard from "@/components/CourseCard";
 import courses from "@/data/courses";
-import LineDivider from "@/components/LineDivider"; // Custom Divider
+import LineDivider from "@/components/LineDivider";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+
+// Promo codes dictionary
+const promoCodes = {
+    "ECU30": 30,
+    "WELCOME20": 20
+};
 
 const CoursesPage = () => {
+    const [promoCode, setPromoCode] = useState("");
+    const [appliedDiscount, setAppliedDiscount] = useState(0);
+    const [error, setError] = useState("");
+
+    const handlePromoCode = () => {
+        const code = promoCode.trim();
+        const discount = promoCodes[Object.keys(promoCodes).find(key =>
+            key.toLowerCase() === code.toLowerCase()
+        )];
+        if (discount) {
+            setAppliedDiscount(discount);
+            setError("");
+        } else {
+            setAppliedDiscount(0);
+            setError("Invalid promo code");
+        }
+    };
+
     return (
         <div className="py-16" style={{ backgroundColor: "#F3F4F6" }}>
             <div className="container mx-auto px-4">
-                {/* Section Heading with Animated Divider */}
+                {/* Header Section */}
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
                     <LineDivider text="Our Courses" highlightedText=">>" />
+
+                    {/* Promo Code Input Section */}
+                    <div className="flex justify-center items-center gap-4 mt-8">
+                        <Input
+                            type="text"
+                            value={promoCode}
+                            onChange={(e) => setPromoCode(e.target.value)}
+                            onKeyDown={(e) => e.key === 'Enter' && handlePromoCode()}
+                            placeholder="Enter promo code"
+                            className="w-48"
+                        />
+                        <Button onClick={handlePromoCode}>
+                            Apply Code
+                        </Button>
+                    </div>
+                    {error && (
+                        <p className="text-red-500 text-center mt-2">{error}</p>
+                    )}
                 </motion.div>
 
                 {/* Courses Grid */}
@@ -34,7 +79,7 @@ const CoursesPage = () => {
                         },
                     }}
                 >
-                    {courses.map((course, index) => (
+                    {courses.map((course) => (
                         <motion.div
                             key={course.id}
                             variants={{
@@ -45,13 +90,15 @@ const CoursesPage = () => {
                             transition={{ duration: 0.4 }}
                             className="relative group"
                         >
-                            {/* Glowing Shadow on Hover */}
                             <div className="absolute inset-0 bg-orange-200 opacity-0 rounded-[30px] blur-lg transition group-hover:opacity-50 group-hover:scale-105"></div>
-                            <CourseCard {...course} />
+                            <CourseCard
+                                {...course}
+                                discount={appliedDiscount}
+                                activePromo={appliedDiscount > 0 ? promoCode.toUpperCase() : ""}
+                            />
                         </motion.div>
                     ))}
                 </motion.div>
-
             </div>
         </div>
     );

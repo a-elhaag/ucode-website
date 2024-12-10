@@ -3,17 +3,18 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
-const CourseCard = ({ id, name, description, price, icon, route, enroll }) => {
+const CourseCard = ({ id, name, description, price, icon, route, enroll, discount, activePromo }) => {
     const router = useRouter();
+    const discountedPrice = price - (price * discount / 100);
 
     return (
         <div
-            onClick={() => router.push(route)} // Navigate to course page
+            onClick={() => router.push(route)}
             className="p-6 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600 hover:bg-[#F3F4F6] hover:scale-105 hover:shadow-orange-500 hover:border-orange-500 flex flex-col justify-between"
             style={{
                 borderRadius: "30px",
-                width: "280px", // Fixed width
-                height: "400px", // Fixed height
+                width: "280px",
+                height: "400px",
             }}
         >
             <div>
@@ -41,9 +42,24 @@ const CourseCard = ({ id, name, description, price, icon, route, enroll }) => {
 
             {/* Price and Button */}
             <div className="mt-4">
-                <p className="text-base font-semibold text-center text-orange-500">
-                    EGP {price} per Level
-                </p>
+                <div className="flex flex-col items-center space-y-1">
+                    {discount > 0 && (
+                        <div className="bg-orange-100 text-orange-600 text-xs px-2 py-1 rounded-full">
+                            {activePromo}: {discount}% OFF
+                        </div>
+                    )}
+                    <div className="flex items-center gap-2 justify-center">
+                        <span className={`text-base ${discount > 0 ? 'line-through text-gray-400' : 'font-semibold text-orange-500'}`}>
+                            EGP {price}
+                        </span>
+                        {discount > 0 && (
+                            <span className="text-lg font-bold text-orange-500">
+                                EGP {discountedPrice.toFixed(0)}
+                            </span>
+                        )}
+                        <span className="text-sm text-gray-500">per Level</span>
+                    </div>
+                </div>
                 <div className="text-center mt-4">
                     <Button
                         asChild
