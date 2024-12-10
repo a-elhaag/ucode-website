@@ -27,28 +27,40 @@ const courses = [
         duration: 3, // levels
         icon: "/assets/course_icons/Cybersecurity.png",
         route: "/courses/cybersecurity",
-        enroll: "https://forms.office.com/e/pkb6bGBVen", // Microsoft Forms link for Cybersecurity
+        enroll: "https://forms.office.com/e/pkb6bGBVen",
     },
     {
         id: "web-development",
         name: "Web Development",
         description: "Learn HTML, CSS, JavaScript, and responsive design with libraries like React.",
         price: 900,
-        duration: 3, // levels
+        duration: 3,
         icon: "/assets/course_icons/Web Development.png",
         route: "/courses/web-development",
-        enroll: "https://forms.office.com/e/F4yR2SmNYC", // Microsoft Forms link for Web Development
+        enroll: "https://forms.office.com/e/F4yR2SmNYC",
     },
     {
         id: "ai",
         name: "Artificial Intelligence",
         description: "Learn foundational concepts in Artificial Intelligence.",
-        price: 900, // Add currency formatting in UI
-        duration: 3, // levels
-        icon: "/assets/course_icons/AI.png", // Update with relevant AI icon
+        price: 900,
+        duration: 3,
+        icon: "/assets/course_icons/AI.png",
         route: "/courses/ai",
-        enroll: "https://forms.office.com/e/F4", // Update with AI-specific form link
+        enroll: "https://forms.office.com/e/e6jZxG958m",
     },
+    {
+        id: "uiux",
+        name: "UI/UX Design",
+        description: "Learn the principles of User Interface and User Experience design.",
+        price: 900,
+        duration: 3,
+        icon: "/assets/course_icons/uiux.png",
+        route: "/courses/uiux",
+        enroll: "https://forms.office.com/e/TfyZkxfYQj",
+    },
+
+
     {
         id: "scratch",
         name: "Scratch Programming",
@@ -57,7 +69,7 @@ const courses = [
         duration: 3, // levels
         icon: "/assets/course_icons/Scratch.png", // Use relevant Scratch course icon
         route: "/courses/scratch",
-        enroll: "https://forms.office.com/e/F4mNYC", // Update with Scratch-specific form link
+        enroll: "https://wa.me/message/E2CET4ZAD3IHB1", // Update with Scratch-specific form link
     }
 
 

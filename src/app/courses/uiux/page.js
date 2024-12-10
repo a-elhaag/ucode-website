@@ -8,7 +8,7 @@ import courses from "@/data/courses";
 import socialMediaLinks from "@/data/socialMediaLinks";
 
 // Course-Specific Data
-const course = courses.find((c) => c.id === "scratch");
+const course = courses.find((c) => c.id === "uiux");
 const monthlyPrice = course.price;
 const discountedPrice = course.price * course.duration * 0.9;
 
@@ -34,24 +34,88 @@ const quickFacts = [
     {
         icon: "⏳", // Example icon, replace with a proper React icon
         title: "Duration",
-        description: "8 hours per level, totaling 24 hours across all levels.",
+        description: "16 hours per level, totaling 48 hours across all levels.",
     },
     {
         icon: "📋", // Example icon, replace with a proper React icon
         title: "Prerequisites",
-        description: "Having prior coding experience is not required to get started.",
+        description: "No prior coding experience is required to get started.",
     },
 ];
 
 const curriculum = [
-    { topic: "Foundations of Visual Programming", description: "Introduction to visual programming concepts using Scratch, focusing on basic building blocks and logic." },
-    { topic: "Storytelling and Animation", description: "Learn to create engaging animations and interactive stories with Scratch's intuitive tools." },
-    { topic: "Interactive Game Design", description: "Dive into game mechanics and build simple games using events, loops, and conditional statements." },
-    { topic: "Foundations of App Development", description: "Introduction to mobile app development concepts using MIT App Inventor." },
-    { topic: "Designing Functional Apps", description: "Learn to design and implement mobile apps with user-friendly interfaces and basic functionality." },
-    { topic: "Advanced App Features", description: "Explore advanced features in MIT App Inventor, such as using sensors, data storage, and APIs." },
-    { topic: "Integration of Scratch and App Inventor", description: "Combine Scratch projects with App Inventor concepts to create cross-platform interactive solutions." },
-    { topic: "Capstone Project", description: "Develop and present a comprehensive project that combines skills learned in Scratch and MIT App Inventor." }
+    {
+        topic: "Introduction to UI/UX Design",
+        description: "Understand the basics of User Interface (UI) and User Experience (UX) design, their importance, and the tools used in the industry."
+    },
+    {
+        topic: "Principles of Design",
+        description: "Learn core design principles like balance, contrast, alignment, and proximity to create aesthetically pleasing designs."
+    },
+    {
+        topic: "Understanding User Experience (UX)",
+        description: "Dive into the psychology of design, understanding user behavior, and creating user-centered experiences."
+    },
+    {
+        topic: "User Research and Empathy",
+        description: "Learn how to conduct user interviews, create personas, and map user journeys."
+    },
+    {
+        topic: "Wireframing and Prototyping",
+        description: "Sketch low-fidelity wireframes and create interactive prototypes using tools like Figma or Adobe XD."
+    },
+    {
+        topic: "Visual Design Fundamentals",
+        description: "Explore color theory, typography, and imagery to craft visually appealing interfaces."
+    },
+    {
+        topic: "Design Systems and Components",
+        description: "Learn how to create reusable design components and design systems for consistent user interfaces."
+    },
+    {
+        topic: "Responsive and Adaptive Design",
+        description: "Design interfaces that work seamlessly across various devices and screen sizes."
+    },
+    {
+        topic: "Accessibility in Design",
+        description: "Understand WCAG guidelines and design inclusive products for users with diverse abilities."
+    },
+    {
+        topic: "UI Animation and Microinteractions",
+        description: "Learn how to create engaging animations and microinteractions to enhance usability."
+    },
+    {
+        topic: "Usability Testing",
+        description: "Conduct usability tests to gather feedback and improve your designs iteratively."
+    },
+    {
+        topic: "Designing for Mobile Applications",
+        description: "Master the principles and techniques for creating intuitive mobile app designs."
+    },
+    {
+        topic: "Introduction to Design Tools",
+        description: "Get hands-on experience with tools like Figma, Adobe XD, or Sketch."
+    },
+    {
+        topic: "Introduction to UX Writing",
+        description: "Learn to craft clear and concise copy for user interfaces."
+    },
+    {
+        topic: "Collaborating with Developers",
+        description: "Understand how to hand off designs, use design-to-code tools, and work with developers efficiently."
+    },
+    {
+        topic: "Building a Portfolio",
+        description: "Learn how to showcase your designs, case studies, and projects in a professional portfolio."
+    },
+    {
+        topic: "Mini Project: Redesign a Mobile App",
+        description: "Choose an existing app and redesign its interface to improve usability and visual appeal."
+    },
+    {
+        topic: "Final Project: Complete UI/UX Case Study",
+        description: "Work on a real-world project to design a product from start to finish, documenting the process for your portfolio."
+    }
 ];
 
 
@@ -80,15 +144,14 @@ const CoursePage = () => {
                 </h1>
                 <p className="text-lg mb-8">{course.description}</p>
                 <div className="space-y-4 md:space-x-4 md:space-y-0 flex flex-col md:flex-row items-center justify-center">
-                    {/* <Button variant="orange_yellow" size="lg" asChild>
+                    <Button variant="orange_yellow" size="lg" asChild>
                         <a href={course.enroll}>Enroll</a>
-                    </Button> */}
+                    </Button>
                     <Button variant="yellow_orange" size="lg" asChild>
-                        <a href={whatsappLink}>Contact Us on WhatsApp for more info</a>
+                        <a href={whatsappLink}>Contact Us on WhatsApp</a>
                     </Button>
                 </div>
             </section>
-
             {/* Pricing Section */}
             <section className="py-16 bg-gray-100 text-center">
                 <LineDivider text="Affordable Learning Options" highlightedText="//" />
