@@ -51,6 +51,13 @@ const Header = () => {
                 >
                     Contact Us
                 </Link>
+                <Link
+                    href="/referral"
+                    className="text-blue-600 hover:text-orange-500 transition-colors"
+                >
+                    Referral Program
+                </Link>
+              
                 {/* <Link
                     href="/my-courses"
                     className="text-blue-600 hover:text-orange-500 transition-colors"
@@ -129,7 +136,14 @@ const Header = () => {
                         onClick={() => setMenuOpen(false)}
                     >
                         Contact Us
+                    </Link>                    <Link
+                        href="/referral"
+                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        Referral Program
                     </Link>
+
                     {/* <Link
                         href="/my-courses"
                         className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"

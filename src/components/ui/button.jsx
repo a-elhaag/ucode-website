@@ -19,6 +19,7 @@ const buttonVariants = cva(
           "border border-gray-300 bg-white text-black shadow-sm hover:bg-gray-100 hover:text-gray-700",
         ghost: "hover:bg-gray-200 text-black",
         link: "text-blue-600 underline-offset-4 hover:underline hover:text-orange-500",
+        referral: "bg-gradient-to-r from-blue-600 to-orange-500 text-white shadow-lg hover:from-orange-500 hover:to-blue-600 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
       },
       size: {
         default: "h-9 px-6 py-2",

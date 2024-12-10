@@ -2,11 +2,12 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-const Card = React.forwardRef(({ className, ...props }, ref) => (
+const Card = React.forwardRef(({ className, variant, ...props }, ref) => (
   <div
     ref={ref}
     className={cn(
       "border bg-card text-card-foreground shadow",
+      variant === "promotional" && "border-orange-500 bg-gradient-to-br from-blue-50 to-orange-50",
       className
     )}
     style={{ borderRadius: "30px" }}

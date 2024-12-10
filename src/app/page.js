@@ -7,6 +7,8 @@ import ContactSection from "@/components/Sections/ContactSection";
 import TestimonialsSection from "@/components/Sections/TestimonialsSection";
 import ExploreCoursesSection from "@/components/Sections/ExploreCoursesSection";
 import FAQSection from "@/components/Sections/FAQSection";
+import EnrollSection from "@/components/Sections/EnrollSection"
+import ReferralSection from "@/components/Sections/ReferralSection"
 
 export default function Page() {
   return (
@@ -18,6 +20,22 @@ export default function Page() {
         transition={{ duration: 1 }}
       >
         <Hero />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: 0.1 }}
+      >
+        <EnrollSection />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: 0.1 }}
+      >
+        <ReferralSection />
       </motion.div>
 
 
