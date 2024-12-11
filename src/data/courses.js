@@ -65,7 +65,7 @@ const courses = [
         id: "scratch",
         name: "Scratch Programming",
         description: "Fundamentals of programming through an interactive platform.",
-        price: 650, // per level, dynamically calculate for total levels in UI
+        price: 750, // per level, dynamically calculate for total levels in UI
         duration: 3, // levels
         icon: "/assets/course_icons/Scratch.png", // Use relevant Scratch course icon
         route: "/courses/scratch",
