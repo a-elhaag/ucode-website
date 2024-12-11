@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input";
 // Promo codes dictionary
 const promoCodes = {
     "ECU30": 30,
-    "WELCOME20": 20
+    "EARLY20": 20
 };
 
 const CoursesPage = () => {
