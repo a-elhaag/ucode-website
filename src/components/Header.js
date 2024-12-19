@@ -3,12 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { UserButton, useAuth } from "@clerk/nextjs";
 import { Button } from "./ui/button";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false); // Track dropdown visibility
-    const { isSignedIn } = useAuth(); // Check user sign-in status
 
     return (
         <header className="flex items-center justify-between py-4 px-6 bg-gray-100 shadow-md relative">
@@ -57,46 +55,18 @@ const Header = () => {
                 >
                     Referral Program
                 </Link>
-              
-                {/* <Link
+
+                <Link
                     href="/my-courses"
                     className="text-blue-600 hover:text-orange-500 transition-colors"
                 >
                     My Courses
-                </Link> */}
+                </Link>
             </nav>
 
-            {/* Login / User Button */}
-            {/* <div className="hidden md:flex items-center">
-                {!isSignedIn ? (
-                    <Button
-                        variant="blue_orange"
-                        size="default"
-                        asChild
-                    >
-                        <a href="/sign-in">Login</a>
-                    </Button>
-                ) : (
-                    <UserButton />
-                )}
-            </div> */}
 
             {/* Mobile Section */}
             <div className="flex items-center space-x-4 md:hidden">
-                {/* Login or User Avatar */}
-                {/* {!isSignedIn ? (
-                    <button
-                        onClick={() => {
-                            window.location.href = "/sign-in";
-                        }}
-                        className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-full shadow-lg hover:bg-orange-500 hover:shadow-xl transition-all duration-300 ease-in-out"
-                    >
-                        Login
-                    </button>
-                ) : (
-                    <UserButton />
-                )} */}
-
                 {/* Hamburger Menu */}
                 <button
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -144,13 +114,13 @@ const Header = () => {
                         Referral Program
                     </Link>
 
-                    {/* <Link
+                    <Link
                         href="/my-courses"
                         className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
                         onClick={() => setMenuOpen(false)}
                     >
                         My Courses
-                    </Link> */}
+                    </Link>
                 </div>
             )}
         </header>
