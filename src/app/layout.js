@@ -2,7 +2,7 @@ import './globals.css';
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from '../components/Header';
 import Footer from "@/components/Footer";
-
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'U-Code',
@@ -30,7 +30,10 @@ export default function RootLayout({ children }) {
         </head>
         <body>
           <Header />
-          <main>{children}</main>
+          <main>
+            {children}
+            <Analytics />
+          </main>
           <Footer />
         </body>
       </html>
