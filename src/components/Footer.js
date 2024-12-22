@@ -33,7 +33,7 @@ const Footer = () => {
                                     href={link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-white hover:text-orange-500 transition"
+                                    className="text-white hover:text-yellow-500 transition"
                                     aria-label={key}
                                 >
                                     {icons[key]}

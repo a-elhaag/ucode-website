@@ -90,7 +90,7 @@ const CoursesPage = () => {
                             transition={{ duration: 0.4 }}
                             className="relative group"
                         >
-                            <div className="absolute inset-0 bg-orange-200 opacity-0 rounded-[30px] blur-lg transition group-hover:opacity-50 group-hover:scale-105"></div>
+                            <div className="absolute inset-0 bg-yellow-200 opacity-0 rounded-[30px] blur-lg transition group-hover:opacity-50 group-hover:scale-105"></div>
                             <CourseCard
                                 {...course}
                                 discount={appliedDiscount}

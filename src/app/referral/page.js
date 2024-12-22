@@ -27,7 +27,7 @@ export default function ReferralPage() {
         <main className="min-h-screen">
             {/* Hero Section */}
             <section className="container mx-auto px-4 py-16 text-center">
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-yellow-500 bg-clip-text text-transparent">
                     Join Our Referral Program
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">

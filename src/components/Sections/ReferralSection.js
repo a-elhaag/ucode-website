@@ -11,7 +11,7 @@ const ReferralSection = () => {
           Our referral program is now live! Join today and share the love of coding while earning up to 20% commission
         </p>
         <Button
-          variant="orange_yellow"
+          variant="yellow_yellow"
           onClick={() => window.location.href = '/referral'}
         >
           Join Referral Program

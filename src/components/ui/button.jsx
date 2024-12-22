@@ -9,17 +9,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        blue_orange: "bg-blue-600 text-white shadow-lg hover:bg-orange-500 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
+        blue_yellow: "bg-blue-600 text-white shadow-lg hover:bg-yellow-500 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
         blue_yellow: "bg-blue-600 text-white shadow-lg hover:bg-yellow-400 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
-        orange_blue: "bg-orange-500 text-white shadow-lg hover:bg-blue-600 hover:text-white hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
-        orange_yellow: "bg-orange-500 text-white shadow-lg hover:bg-yellow-400 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
-        yellow_blue: "bg-yellow-400 text-black shadow-lg hover:bg-blue-600 hover:text-white hover:shadow-xl hover:-translate-y-1",
-        yellow_orange: "bg-yellow-400 text-black shadow-lg hover:bg-orange-500 hover:text-black hover:shadow-xl hover:-translate-y-1",
+        yellow_blue: "bg-yellow-500 text-white shadow-lg hover:bg-blue-600 hover:text-white hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
+        yellow_yellow: "bg-yellow-500 text-white shadow-lg hover:bg-yellow-400 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
+        yellow_blue: "bg-yellow-400 text-gray shadow-lg hover:bg-blue-600 hover:text-white hover:shadow-xl hover:-translate-y-1",
+        yellow_yellow: "bg-yellow-400 text-gray shadow-lg hover:bg-yellow-500 hover:text-gray hover:shadow-xl hover:-translate-y-1",
         outline:
-          "border border-gray-300 bg-white text-black shadow-sm hover:bg-gray-100 hover:text-gray-700",
-        ghost: "hover:bg-gray-200 text-black",
-        link: "text-blue-600 underline-offset-4 hover:underline hover:text-orange-500",
-        referral: "bg-gradient-to-r from-blue-600 to-orange-500 text-white shadow-lg hover:from-orange-500 hover:to-blue-600 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
+          "border border-gray-300 bg-white text-gray shadow-sm hover:bg-gray-100 hover:text-gray-700",
+        ghost: "hover:bg-gray-200 text-gray",
+        link: "text-blue-600 underline-offset-4 hover:underline hover:text-yellow-500",
+        referral: "bg-gradient-to-r from-blue-600 to-yellow-500 text-white shadow-lg hover:from-yellow-500 hover:to-blue-600 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1",
       },
       size: {
         default: "h-9 px-6 py-2",
@@ -29,7 +29,7 @@ const buttonVariants = cva(
       },
     },
     defaultVariants: {
-      variant: "blue_orange", // Default to blue variant
+      variant: "blue_yellow", // Default to blue variant
       size: "default",
     },
   }

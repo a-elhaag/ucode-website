@@ -39,15 +39,15 @@ const FAQSection = () => {
                             key={index}
                             value={`faq-${index}`}
                             className={`mb-6 p-4 transition-transform transform ${activeIndex === index
-                                ? "scale-105 border-orange-500 shadow-lg"
+                                ? "scale-105 border-yellow-500 shadow-lg"
                                 : "border-gray-300 shadow-md hover:scale-102"
                                 } rounded-[30px] bg-white`}
                         >
                             {/* Trigger without Arrow */}
                             <AccordionTrigger
                                 className={`text-lg font-semibold p-4 transition-colors ${activeIndex === index
-                                    ? "text-orange-500"
-                                    : "text-blue-600 hover:text-orange-500"
+                                    ? "text-yellow-500"
+                                    : "text-blue-600 hover:text-yellow-500"
                                     }`}
                                 onClick={() => toggleActiveIndex(index)}
                             >

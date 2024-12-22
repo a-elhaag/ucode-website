@@ -85,10 +85,10 @@ const CoursePage = () => {
                 </h1>
                 <p className="text-lg mb-8">{course.description}</p>
                 <div className="space-y-4 md:space-x-4 md:space-y-0 flex flex-col md:flex-row items-center justify-center">
-                    <Button variant="orange_yellow" size="lg" asChild>
+                    <Button variant="yellow_yellow" size="lg" asChild>
                         <a href={course.enroll}>Enroll</a>
                     </Button>
-                    <Button variant="yellow_orange" size="lg" asChild>
+                    <Button variant="yellow_yellow" size="lg" asChild>
                         <a href={whatsappLink}>Contact Us on WhatsApp</a>
                     </Button>
                 </div>
@@ -108,7 +108,7 @@ const CoursePage = () => {
                         <p className="text-sm mt-2">EGP {monthlyPrice} per Level</p>
                     </motion.div>
                     <motion.div
-                        className="p-6 bg-orange-500 text-white rounded-[30px] shadow-md transform transition group hover:scale-105 hover:bg-orange-600"
+                        className="p-6 bg-yellow-500 text-white rounded-[30px] shadow-md transform transition group hover:scale-105 hover:bg-yellow-600"
                         whileHover={{ scale: 1.05 }}
                     >
                         <h3 className="text-lg font-bold text-white group-hover:text-white transition">
@@ -148,7 +148,7 @@ const CoursePage = () => {
                         {quickFacts.map((item, index) => (
                             <motion.div
                                 key={index}
-                                className="p-6 bg-orange-500 text-white rounded-[30px] shadow-md transition-transform transform hover:scale-105 hover:bg-orange-600"
+                                className="p-6 bg-yellow-500 text-white rounded-[30px] shadow-md transition-transform transform hover:scale-105 hover:bg-yellow-600"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.3 }}
@@ -165,13 +165,13 @@ const CoursePage = () => {
 
             {/* Curriculum Section */}
             <section className="container mx-auto px-4 py-16">
-                <h2 className="text-3xl font-bold text-center text-orange-500 mb-10">Educational program</h2>
+                <h2 className="text-3xl font-bold text-center text-yellow-500 mb-10">Educational program</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {curriculum.map((item, index) => (
                         <motion.div
                             key={index}
                             className={`p-4 bg-white border-2 rounded-[30px] shadow-md cursor-pointer transform transition group ${activeTopic === index
-                                ? "border-orange-500 shadow-lg scale-105"
+                                ? "border-yellow-500 shadow-lg scale-105"
                                 : "border-gray-300 hover:shadow-md hover:border-blue-500"
                                 }`}
                             onClick={() => toggleTopic(index)}
@@ -207,7 +207,7 @@ const CoursePage = () => {
                     ))}
                 </div>
                 <div className="text-center mt-8">
-                    <Button variant="orange_blue" size="lg" asChild>
+                    <Button variant="yellow_blue" size="lg" asChild>
                         <a href={course.enroll}>Enroll Now</a>
                     </Button>
                 </div>
@@ -220,7 +220,7 @@ const CoursePage = () => {
                 <p className="text-lg mb-8">
                     Receive a <span className="font-bold">certificate</span> upon completing the full course.
                 </p>
-                <Button variant="orange_yellow" size="lg" asChild>
+                <Button variant="yellow_yellow" size="lg" asChild>
                     <a href={course.enroll}>Enroll and Get Certified</a>
                 </Button>
             </section>
@@ -232,7 +232,7 @@ const CoursePage = () => {
                     {testimonials.map(({ id, name, feedback, photo }) => (
                         <motion.div
                             key={id}
-                            className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600 hover:bg-[#F3F4F6] hover:scale-105 hover:shadow-orange-500 hover:border-orange-500"
+                            className="p-12 m-4 border-2 shadow-md cursor-pointer transition-transform transform border-blue-600 hover:bg-[#F3F4F6] hover:scale-105 hover:shadow-yellow-500 hover:border-yellow-500"
                             style={{ borderRadius: "30px" }}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}

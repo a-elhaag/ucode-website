@@ -7,7 +7,7 @@ export default function NotFound() {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-background text-center px-6">
             <h1 className="text-7xl font-extrabold text-blue-600 animate-bounce">
-                4<span className="text-orange-500">0</span>4
+                4<span className="text-yellow-500">0</span>4
             </h1>
             <p className="text-lg text-gray-700 mt-4">
                 Oops! It seems you’re lost in the code jungle.
@@ -20,7 +20,7 @@ export default function NotFound() {
                 <Button
                     as="a"
                     href="/"
-                    variant="blue_orange"
+                    variant="blue_yellow"
                     size="lg"
                     className="shadow-lg hover:shadow-xl transition-all"
                 >
@@ -28,7 +28,7 @@ export default function NotFound() {
                 </Button>
                 <Link
                     href="/contact"
-                    className="text-blue-600 hover:text-orange-500 underline-offset-4 hover:underline transition-all"
+                    className="text-blue-600 hover:text-yellow-500 underline-offset-4 hover:underline transition-all"
                 >
                     Contact Support
                 </Link>

@@ -29,7 +29,7 @@ const TestimonialsSection = () => {
                     transition={{ duration: 0.5, delay: id * 0.1 }}
                 >
                     <Card
-                        className="p-12 m-4 border-2 shadow-md cursor-pointer transform border-blue-600 hover:scale-105 hover:shadow-orange-500 hover:border-orange-500"
+                        className="p-12 m-4 border-2 shadow-md cursor-pointer transform border-blue-600 hover:scale-105 hover:shadow-yellow-500 hover:border-yellow-500"
                         style={{ borderRadius: "30px" }}
                     >
                         <div className="flex flex-col items-center text-center">
@@ -56,7 +56,7 @@ const TestimonialsSection = () => {
                     <motion.div className="text-center mt-8">
                         <button
                             onClick={toggleModal}
-                            className="px-6 py-2 bg-orange-500 text-white rounded-full shadow-lg hover:bg-orange-600 transition-all"
+                            className="px-6 py-2 bg-yellow-500 text-white rounded-full shadow-lg hover:bg-yellow-600 transition-all"
                         >
                             View More
                         </button>
@@ -65,7 +65,7 @@ const TestimonialsSection = () => {
             </div>
             <AnimatePresence>
                 {modalOpen && (
-                    <motion.div className="fixed inset-0 z-50 bg-black bg-opacity-75 flex items-center justify-center">
+                    <motion.div className="fixed inset-0 z-50 bg-gray bg-opacity-75 flex items-center justify-center">
                         <motion.div
                             className="relative bg-white rounded-3xl p-6 max-w-4xl w-full mx-6 sm:mx-12 lg:mx-16 overflow-y-auto max-h-screen"
                             initial={{ y: 50 }}
@@ -75,7 +75,7 @@ const TestimonialsSection = () => {
                         >
                             <button
                                 onClick={toggleModal}
-                                className="absolute top-4 right-4 text-gray-600 text-2xl font-bold hover:text-black transition"
+                                className="absolute top-4 right-4 text-gray-600 text-2xl font-bold hover:text-gray transition"
                             >
                                 ✕
                             </button>

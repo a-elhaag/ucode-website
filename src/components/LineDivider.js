@@ -11,7 +11,7 @@ const LineDivider = ({
                     textColor: "text-blue-600",
                     format: (
                         <>
-                            <span className="text-orange-500"># </span>{text}
+                            <span className="text-yellow-500"># </span>{text}
                         </>
                     ),
                 };
@@ -27,8 +27,8 @@ const LineDivider = ({
                 };
             case "cpp-comment":
                 return {
-                    lineColor: "bg-orange-500",
-                    textColor: "text-orange-500",
+                    lineColor: "bg-yellow-500",
+                    textColor: "text-yellow-500",
                     format: (
                         <>
                             <span className="text-blue-600">/* </span>{text}
@@ -64,7 +64,7 @@ const LineDivider = ({
                     textColor: "text-gray-600",
                     format: (
                         <>
-                            <span className="text-orange-500">{highlightedText} </span>{text}
+                            <span className="text-yellow-500">{highlightedText} </span>{text}
                         </>
                     ),
                 };

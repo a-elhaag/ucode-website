@@ -29,38 +29,38 @@ const Header = () => {
             <nav className="hidden md:flex space-x-10">
                 <Link
                     href="/"
-                    className="text-blue-600 hover:text-orange-500 transition-colors"
+                    className="text-blue-600 hover:text-yellow-500 transition-colors"
                 >
                     Home
                 </Link>
                 <Link
                     href="/about"
-                    className="text-blue-600 hover:text-orange-500 transition-colors"
+                    className="text-blue-600 hover:text-yellow-500 transition-colors"
                 >
                     About Us
                 </Link>
                 <Link
                     href="/courses"
-                    className="text-blue-600 hover:text-orange-500 transition-colors"
+                    className="text-blue-600 hover:text-yellow-500 transition-colors"
                 >
                     Courses
                 </Link>
                 <Link
                     href="/contact"
-                    className="text-blue-600 hover:text-orange-500 transition-colors"
+                    className="text-blue-600 hover:text-yellow-500 transition-colors"
                 >
                     Contact Us
                 </Link>
                 <Link
                     href="/referral"
-                    className="text-blue-600 hover:text-orange-500 transition-colors"
+                    className="text-blue-600 hover:text-yellow-500 transition-colors"
                 >
                     Referral Program
                 </Link>
 
                 <Link
                     href="/my-courses"
-                    className="text-blue-600 hover:text-orange-500 transition-colors"
+                    className="text-blue-600 hover:text-yellow-500 transition-colors"
                 >
                     My Courses
                 </Link>
@@ -70,7 +70,7 @@ const Header = () => {
             <div className="hidden md:flex items-center">
                 {!isSignedIn ? (
                     <Button
-                        variant="blue_orange"
+                        variant="blue_yellow"
                         size="default"
                         asChild
                     >
@@ -89,7 +89,7 @@ const Header = () => {
                         onClick={() => {
                             window.location.href = "/sign-in";
                         }}
-                        className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-full shadow-lg hover:bg-orange-500 hover:shadow-xl transition-all duration-300 ease-in-out"
+                        className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-full shadow-lg hover:bg-yellow-500 hover:shadow-xl transition-all duration-300 ease-in-out"
                     >
                         Login
                     </button>
@@ -111,34 +111,34 @@ const Header = () => {
                 <div className="absolute right-0 top-16 bg-white rounded-lg shadow-lg w-48 z-50">
                     <Link
                         href="/"
-                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        className="block px-4 py-2 text-blue-600 hover:text-yellow-500 hover:bg-gray-100 transition-colors"
                         onClick={() => setMenuOpen(false)}
                     >
                         Home
                     </Link>
                     <Link
                         href="/about"
-                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        className="block px-4 py-2 text-blue-600 hover:text-yellow-500 hover:bg-gray-100 transition-colors"
                         onClick={() => setMenuOpen(false)}
                     >
                         About Us
                     </Link>
                     <Link
                         href="/courses"
-                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        className="block px-4 py-2 text-blue-600 hover:text-yellow-500 hover:bg-gray-100 transition-colors"
                         onClick={() => setMenuOpen(false)}
                     >
                         Courses
                     </Link>
                     <Link
                         href="/contact"
-                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        className="block px-4 py-2 text-blue-600 hover:text-yellow-500 hover:bg-gray-100 transition-colors"
                         onClick={() => setMenuOpen(false)}
                     >
                         Contact Us
                     </Link>                    <Link
                         href="/referral"
-                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        className="block px-4 py-2 text-blue-600 hover:text-yellow-500 hover:bg-gray-100 transition-colors"
                         onClick={() => setMenuOpen(false)}
                     >
                         Referral Program
@@ -146,7 +146,7 @@ const Header = () => {
 
                     <Link
                         href="/my-courses"
-                        className="block px-4 py-2 text-blue-600 hover:text-orange-500 hover:bg-gray-100 transition-colors"
+                        className="block px-4 py-2 text-blue-600 hover:text-yellow-500 hover:bg-gray-100 transition-colors"
                         onClick={() => setMenuOpen(false)}
                     >
                         My Courses

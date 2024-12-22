@@ -12,7 +12,7 @@ const SectionHeader = ({ title, subtitle, highlightedText = "//", className = ""
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
             >
-                <span className="text-orange-500">{highlightedText} </span>
+                <span className="text-yellow-500">{highlightedText} </span>
                 {title}
             </motion.h2>
 

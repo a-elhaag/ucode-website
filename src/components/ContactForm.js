@@ -38,7 +38,7 @@ export default function ContactForm() {
                     Email us at:{" "}
                     <a
                         href="mailto:contact@ucode.live"
-                        className="text-orange-500 underline hover:text-blue-600"
+                        className="text-yellow-500 underline hover:text-blue-600"
                     >
                         contact@ucode.live
                     </a>
@@ -49,7 +49,7 @@ export default function ContactForm() {
                         href={socialMediaLinks.whatsapp || "#"}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-orange-500 underline hover:text-blue-600"
+                        className="text-yellow-500 underline hover:text-blue-600"
                     >
                         Chat Now
                     </a>
@@ -101,7 +101,7 @@ export default function ContactForm() {
                     {/* Submit Button */}
                     <Button
                         type="submit"
-                        variant="blue_orange"
+                        variant="blue_yellow"
                         size="lg"
                         disabled={state.submitting}
                         className="w-full"

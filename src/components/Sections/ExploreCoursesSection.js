@@ -18,7 +18,7 @@ const ExploreCoursesSection = () => {
                     ))}
                 </div>
                 <div className="text-center mt-8">
-                    <Button variant="blue_orange" size="lg" asChild>
+                    <Button variant="blue_yellow" size="lg" asChild>
                         <a href="/courses">Explore Courses</a>
                     </Button>
                 </div>

@@ -5,7 +5,7 @@ import Image from "next/image";
 const InstructorCard = ({ name, description, image }) => {
     return (
         <div
-            className="p-6 m-4 bg-white border-2 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-orange-500"
+            className="p-6 m-4 bg-white border-2 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-yellow-500"
             style={{
                 borderRadius: "20px", // Slightly rounded corners
                 borderColor: "#004aad", // Blue border

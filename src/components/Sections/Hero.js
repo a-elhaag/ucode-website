@@ -10,7 +10,7 @@ const Hero = () => {
             style={{ backgroundImage: "url('/hero-bg.svg')" }} // Update with your background image path
         >
             {/* Overlay Shade */}
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center">
+            <div className="absolute inset-0 bg-gray bg-opacity-50 flex flex-col items-center justify-center text-center">
                 {/* Hero Text with Animation */}
                 <motion.h1
                     className="text-4xl font-bold text-white"
@@ -20,7 +20,7 @@ const Hero = () => {
                 >
                     U
                     <motion.span
-                        className="text-orange-500"
+                        className="text-yellow-500"
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.5, duration: 0.5 }}
@@ -29,7 +29,7 @@ const Hero = () => {
                     </motion.span>
                     Code
                     <motion.span
-                        className="text-orange-500"
+                        className="text-yellow-500"
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 1, duration: 0.5 }}
@@ -51,7 +51,7 @@ const Hero = () => {
 
                 {/* Call-to-Action Button */}
                 <div className="mt-6">
-                    <Button variant="blue_orange" size="lg" asChild>
+                    <Button variant="blue_yellow" size="lg" asChild>
                         <a href="/courses">Explore Courses</a>
                     </Button>
                 </div>

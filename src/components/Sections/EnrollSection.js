@@ -61,7 +61,7 @@ const EnrollSection = () => {
                     transition={{ duration: 0.8 }}
                     className="text-center max-w-3xl mx-auto"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-orange-500 to-yellow-400 text-transparent bg-clip-text">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-yellow-500 to-yellow-400 text-transparent bg-clip-text">
                         Level Up Your Coding Journey!
                     </h2>
                     <p className="text-xl text-gray-600 mb-8">
@@ -72,7 +72,7 @@ const EnrollSection = () => {
                     <div className="space-y-4">
                         <Link href="/courses">
                             <Button
-                                variant="blue_orange"
+                                variant="blue_yellow"
                                 size="lg"
                                 className="text-lg px-12 py-6"
                             >
