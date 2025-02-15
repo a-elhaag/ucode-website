@@ -7,7 +7,7 @@ const courses = [
         duration: 3, // levels
         icon: "/assets/course_icons/Python.png",
         route: "/courses/python",
-        enroll: "https://forms.office.com/e/1T4CCWFHts", // Microsoft Forms link for Python
+        enroll: "https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9uMq5UzPBVFgz-YO3oDM9VUMlcxOE4zUjJBMDBaWFVEWDQ5SE1HSTA4Vi4u", // Microsoft Forms link for Python
     },
     {
         id: "cpp",
@@ -17,7 +17,7 @@ const courses = [
         duration: 3, // levels
         icon: "/assets/course_icons/CPP.png",
         route: "/courses/cpp",
-        enroll: "https://forms.office.com/e/VWEyQV4qz0", // Microsoft Forms link for C++
+        enroll: "https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9uMq5UzPBVFgz-YO3oDM9VUMlcxOE4zUjJBMDBaWFVEWDQ5SE1HSTA4Vi4u", // Microsoft Forms link for C++
     },
     {
         id: "cybersecurity",
@@ -27,7 +27,7 @@ const courses = [
         duration: 3, // levels
         icon: "/assets/course_icons/Cybersecurity.png",
         route: "/courses/cybersecurity",
-        enroll: "https://forms.office.com/e/pkb6bGBVen",
+        enroll: "https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9uMq5UzPBVFgz-YO3oDM9VUMlcxOE4zUjJBMDBaWFVEWDQ5SE1HSTA4Vi4u",
     },
     {
         id: "web-development",
@@ -37,7 +37,7 @@ const courses = [
         duration: 3,
         icon: "/assets/course_icons/Web Development.png",
         route: "/courses/web-development",
-        enroll: "https://forms.office.com/e/F4yR2SmNYC",
+        enroll: "https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9uMq5UzPBVFgz-YO3oDM9VUMlcxOE4zUjJBMDBaWFVEWDQ5SE1HSTA4Vi4u",
     },
     {
         id: "ai",
@@ -47,7 +47,7 @@ const courses = [
         duration: 3,
         icon: "/assets/course_icons/AI.png",
         route: "/courses/ai",
-        enroll: "https://forms.office.com/e/e6jZxG958m",
+        enroll: "https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9uMq5UzPBVFgz-YO3oDM9VUMlcxOE4zUjJBMDBaWFVEWDQ5SE1HSTA4Vi4u",
     },
     {
         id: "uiux",
@@ -57,7 +57,7 @@ const courses = [
         duration: 3,
         icon: "/assets/course_icons/uiux.png",
         route: "/courses/uiux",
-        enroll: "https://forms.office.com/e/TfyZkxfYQj",
+        enroll: "https://forms.office.com/Pages/ResponsePage.aspx?id=oBzDhDusrk6tEVGdgCM-b9uMq5UzPBVFgz-YO3oDM9VUMlcxOE4zUjJBMDBaWFVEWDQ5SE1HSTA4Vi4u",
     },
 
 
